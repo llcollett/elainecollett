@@ -20,45 +20,39 @@ a {
 .header {
     left: 0; right: 0; top: 0;
     margin: 0; padding: 0;
-    height: 10rem;
+    height: 6rem;
     width: 100%;
     z-index: 10;
     position: fixed;
-    background-color: white;
+    color: white;
+    background-color: green;
+    display: flex;
+    align-items: center;
 }
-/*header logo and text*/
-.header-top {
+/*header name*/
+.header-name {
     left: 0; right: 0; top: 0;
     margin: 0; padding: 0;
-    height: 8rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: space-between;
+    width: 25%;
 }
 /*header text*/
 .header h1 {
     margin: 0; padding: 0;
     font-size: 1.9rem;
     font-weight: 300;
-    text-align: center;
 }
 /*header nav*/
 nav {
-    top: 9rem;
     margin: 0; padding: 0;
-    width: 100%;
-    background-color: green;
 }
 nav ul {
     margin: 0; padding: 0;
-    height: 2rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 nav ul li, nav ul li a {
-    padding: 0;
+    padding: 1rem;
     font-size: 1.25rem;
     font-weight: 300;
     color: white;
@@ -66,23 +60,18 @@ nav ul li, nav ul li a {
 }
 nav ul li:hover, nav ul li a:hover {
     color: rgb(127, 125, 125);
-    text-shadow: none;
     cursor: pointer;
 }
 
 /*main*/
 .content {
     left: 0; right: 0;
-    top: 10rem;
+    top: 6rem;
     padding: 0.5rem 0.5rem 5rem;
     position: absolute;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-flow: row wrap;
-}
-.content h2 {
-    font-weight: 300;
 }
 .content .home-box {
     scroll-margin-top: 9rem;
@@ -95,14 +84,8 @@ nav ul li:hover, nav ul li a:hover {
     color: black;
     background-color: green;
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    transition: all 250ms ease-in-out;
-}
-.content .home-box h2, 
-.content .home-box p {
-    padding: 0.25rem; margin: 0;
 }
 .content .home-box img {
     padding: 0.5rem;
@@ -147,7 +130,11 @@ nav ul li:hover, nav ul li a:hover {
     text-shadow: none;
 }
 
-/*smaller than default width*/
+
+/*
+
+
+
 @media only screen and (max-width: 430px) {
     .header {height: 9rem;}
     .header h1 {font-size: 1.5rem;}
@@ -166,7 +153,6 @@ nav ul li:hover, nav ul li a:hover {
     }
     .contact h2, .contact a {font-size: 1.2rem;}
 }
-/*nested max widths for smaller screens and smaller font sizes specifically*/
 @media only screen and (max-width: 358px) {
     .header h1 {font-size: 1.25rem;}
     nav ul li, nav ul li a {font-size: 1rem;}
@@ -180,17 +166,17 @@ nav ul li:hover, nav ul li a:hover {
     .contact h2, .contact a {font-size: 0.8rem;}
 }
 
-/*smaller than default height but only if not smaller than smallest specified width*/
+
 @media only screen and (max-height: 696px) and (min-width: 430px) {
     .header {height: 7rem}
-    .header-top {
+    .header-name {
         height: 5rem;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
     }
-    .header-top .header-logo img {padding: 1rem;}
+    .header-name .header-logo img {padding: 1rem;}
     .header h1 {font-size: 1.5rem;}
     .content {
         top: 7rem;
@@ -217,17 +203,17 @@ nav ul li:hover, nav ul li a:hover {
     }
 }
 
-/*larger*/
+
 @media only screen and (min-width: 1272px) {
     .header {height: 11rem}
-    .header-top {
+    .header-name {
         height: 8rem;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
     }
-    .header-top .header-logo img {
+    .header-name .header-logo img {
         width: 5rem;
         padding: 0.5rem 2rem;
     }
@@ -253,3 +239,5 @@ nav ul li:hover, nav ul li a:hover {
         font-size: 2rem;
     }
 }
+
+*/
