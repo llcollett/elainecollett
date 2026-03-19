@@ -1,7 +1,7 @@
 
 /*universal styles*/
 html {
-    font-family: "Merriweather", serif;
+    font-family: "Roboto Mono", serif;
     font-size: 16px;
     opacity: 80%;
     text-align: center;
@@ -24,8 +24,7 @@ a {
     width: 100%;
     z-index: 10;
     position: fixed;
-    color: white;
-    background-color: green;
+    background-color: #40ad36;
     display: flex;
     align-items: center;
 }
@@ -36,10 +35,11 @@ a {
     width: 25%;
 }
 /*header text*/
-.header h1 {
+.header h1 a {
     margin: 0; padding: 0;
     font-size: 1.9rem;
     font-weight: 300;
+    color: white;
 }
 /*header nav*/
 nav {
@@ -58,7 +58,7 @@ nav ul li, nav ul li a {
     color: white;
     display: flex;
 }
-nav ul li:hover, nav ul li a:hover {
+header h1 a:hover, nav ul li:hover, nav ul li a:hover {
     color: rgb(127, 125, 125);
     cursor: pointer;
 }
@@ -82,7 +82,7 @@ nav ul li:hover, nav ul li a:hover {
     font-size: 0.9rem;
     font-weight: 300;
     color: black;
-    background-color: green;
+    background-color: #40ad36;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -100,7 +100,7 @@ nav ul li:hover, nav ul li a:hover {
     height: 3.5rem;
     z-index: 20;
     position: fixed;
-    background-color: green;
+    background-color: #40ad36;
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
@@ -114,7 +114,7 @@ nav ul li:hover, nav ul li a:hover {
 .contact .insta img {
     padding: 0.5rem;
     margin: 0.5rem;
-    height: 4rem;
+    height: 2rem;
 }
 .contact h2, .contact a {
     margin: 0; padding: 0;
@@ -129,6 +129,41 @@ nav ul li:hover, nav ul li a:hover {
     color: rgb(127, 125, 125);
     text-shadow: none;
 }
+
+/*gallery*/
+.gallery-title {
+    left: 0; right: 0;
+    top: 6rem;
+    height: 4rem;
+    width: 25%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gallery-title h2 {
+    font-size: 1.5rem;
+}
+.gallery-content {
+    left: 0; right: 0;
+    top: 10rem;
+    border-top: 1px solid black;
+    padding: 1rem;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+.gallery-box {
+    margin: 2rem;
+    padding: 1rem;
+    background-color: grey;
+}
+.gallery-box img {
+    height: 20rem;
+}
+
 
 
 /*
