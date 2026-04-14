@@ -138,8 +138,44 @@ nav ul li, nav ul li a {
 
 
 
-
-
+/* about */
+.about-container {
+    top: 8rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.statement-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: top;
+}
+.statement-portrait, .statement-text {
+    padding: 2rem;
+}
+.statement-portrait img {
+    height: 20rem;
+}
+#statement-quote {
+    padding: 0.25rem;
+    font-style: italic;
+    line-height: 50%;
+    text-align: center;
+}
+.cv-container {
+    margin: 1rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: top;
+}
+.cv-container td {
+    padding: 0.5rem;
+}
 
 
 /*gallery*/
