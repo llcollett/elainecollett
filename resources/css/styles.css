@@ -162,8 +162,10 @@ nav ul li, nav ul li a {
 #statement-quote {
     padding: 0.25rem;
     font-style: italic;
-    line-height: 50%;
     text-align: center;
+}
+#statement-quote p {
+    margin: 0;
 }
 .cv-container {
     margin: 1rem;
