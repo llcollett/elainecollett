@@ -206,12 +206,19 @@ nav ul li, nav ul li a {
     flex-flow: row wrap;
 }
 .gallery-box {
-    margin: 2rem;
+    margin: 0 1rem 4rem;
     padding: 1rem;
     background-color: #ded1ce;
 }
 .gallery-box img {
     height: 20rem;
+}
+#gallery-title {
+    font-size: 1rem;
+    font-weight: bold;
+}
+#gallery-details {
+    font-size: 0.75rem;
 }
 
 
