@@ -10,7 +10,7 @@ body {
 
 /* fonts */
 h1, h2, h3, p, nav ul li, nav ul li a, tr td {
-    font-family: "Google Sans", serif;
+    font-family: "Google Sans", sans-serif;
 }
 a {
     text-decoration: none;
