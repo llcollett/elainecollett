@@ -55,6 +55,7 @@ header h1 a:hover, nav ul li:hover, nav ul li a:hover {
     font-size: 1.9rem;
     font-weight: bold;
     letter-spacing: 1rem;
+    text-transform: uppercase;
 }
 nav ul {
     margin: 0; padding: 0;
@@ -67,6 +68,7 @@ nav ul li, nav ul li a {
     font-size: 1.5rem;
     font-weight: bold;
     letter-spacing: 0.5rem;
+    text-transform: uppercase;
     color: white;
     display: flex;
 }
@@ -213,18 +215,14 @@ nav ul li, nav ul li a {
 .gallery-box {
     margin: 0 1rem 4rem;
     padding: 1rem;
-    border: 1px solid black;
+}
+.gallery-box img {
+    height: 20rem;
 }
 .gallery-box:hover {
     transform: scale(1.025);
     box-shadow: 0.25rem 0.25rem 0.5rem black;
     cursor: pointer;
-}
-.gallery-image {
-    height: 20rem;
-}
-.gallery-image-large {
-    height: 40rem;
 }
 #gallery-title {
     font-size: 1rem;
