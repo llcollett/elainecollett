@@ -2,7 +2,7 @@
 /*universal styles*/
 html {
     font-size: 16px;
-    opacity: 90%;
+    opacity: 80%;
 }
 body {
     margin: 0; padding: 0;
@@ -10,7 +10,7 @@ body {
 
 /* fonts */
 h1, h2, h3, p, nav ul li, nav ul li a, tr td {
-    font-family: "Roboto Mono", serif;
+    font-family: "Google Sans", serif;
 }
 a {
     text-decoration: none;
@@ -54,6 +54,7 @@ header h1 a:hover, nav ul li:hover, nav ul li a:hover {
     color: white;
     font-size: 1.9rem;
     font-weight: bold;
+    letter-spacing: 1rem;
 }
 nav ul {
     margin: 0; padding: 0;
@@ -65,6 +66,7 @@ nav ul {
 nav ul li, nav ul li a {
     font-size: 1.5rem;
     font-weight: bold;
+    letter-spacing: 0.5rem;
     color: white;
     display: flex;
 }
@@ -120,6 +122,7 @@ nav ul li, nav ul li a {
     margin: 0; padding: 0;
     font-size: 1.25rem;
     font-weight: bold;
+    letter-spacing: 0.5rem;
     color: white;
     display: inline-flex;
     justify-content: space-between;
@@ -210,10 +213,18 @@ nav ul li, nav ul li a {
 .gallery-box {
     margin: 0 1rem 4rem;
     padding: 1rem;
-    background-color: #ded1ce;
+    border: 1px solid black;
 }
-.gallery-box img {
+.gallery-box:hover {
+    transform: scale(1.025);
+    box-shadow: 0.25rem 0.25rem 0.5rem black;
+    cursor: pointer;
+}
+.gallery-image {
     height: 20rem;
+}
+.gallery-image-large {
+    height: 40rem;
 }
 #gallery-title {
     font-size: 1rem;
