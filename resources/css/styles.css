@@ -163,17 +163,18 @@ header a:hover, .nav a:hover, .contact a:hover {
 
 /*gallery*/
 .gallery-header {
-    left: 0; right: 0;
+    margin: 0; padding: 0;
     top: 12rem;
     height: 3rem;
     background-color: #eeeeee;
-    opacity: 60%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 .gallery-nav a {
-    margin: 0; padding: 0;
+    margin: 0 1rem; padding: 0;
     font-size: 1.5rem;
     font-weight: bold;
     letter-spacing: 0.5rem;
@@ -182,7 +183,7 @@ header a:hover, .nav a:hover, .contact a:hover {
 }
 .gallery-content {
     left: 0; right: 0;
-    top: 12rem;
+    top: 15rem;
     padding: 1rem;
     position: absolute;
     display: flex;
