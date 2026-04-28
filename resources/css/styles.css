@@ -1,6 +1,7 @@
 
 /*universal styles*/
 html {
+    font-family: "Google Sans", sans-serif;
     font-size: 16px;
     opacity: 80%;
 }
@@ -9,9 +10,6 @@ body {
 }
 
 /* fonts */
-h1, h2, h3, p, nav ul li, nav ul li a, tr td {
-    font-family: "Google Sans", sans-serif;
-}
 a {
     text-decoration: none;
 }
@@ -26,57 +24,72 @@ a {
 .header {
     left: 0; right: 0; top: 0;
     margin: 0; padding: 0;
-    height: 8rem;
+    height: 12rem;
+    background-color: white;
     width: 100%;
-    z-index: 10;
-    position: fixed;
-    background-color: #40ad36;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-}
-.header-name, .header-nav {
-    height: 4rem;
-    width: 30rem;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
-header h1 a:hover, nav ul li:hover, nav ul li a:hover {
+.name, .nav, .contact {
+    margin: 0; 
+    padding: 0.25rem;
+    width: 40rem;
+    text-align: center;
+}
+header a:hover, .nav a:hover, .contact a:hover {
     color: #ded1ce;
     cursor: pointer;
 }
-.header-name {
-    border-bottom: 1px solid white;
+.name, .contact, .nav {
+    border-bottom: 1px solid black;
 }
-.header h1 a {
-    color: white;
-    font-size: 1.9rem;
+.name a {
+    color: black;
+    font-size: 1.4rem;
     font-weight: bold;
     letter-spacing: 1rem;
     text-transform: uppercase;
 }
-nav ul {
-    margin: 0; padding: 0;
+.name a h1 {
+    margin: 0; padding: 1rem;
+}
+.contact a {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
     column-gap: 1rem;
 }
-nav ul li, nav ul li a {
+.contact img {
+    height: 1.5rem;
+}
+.contact a h2 {
+    margin: 0; padding: 0;
+    font-size: 1.5rem;
+    color: black;
+    letter-spacing: 0.25rem;
+}
+.nav {
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav a {
+    margin: 0; padding: 0;
     font-size: 1.5rem;
     font-weight: bold;
     letter-spacing: 0.5rem;
     text-transform: uppercase;
-    color: white;
-    display: flex;
+    color: black;
 }
 
 /*main*/
 .content {
     left: 0; right: 0;
-    top: 8rem;
+    top: 12rem;
     position: absolute;
     display: flex;
     justify-content: center;
@@ -86,7 +99,6 @@ nav ul li, nav ul li a {
     padding: 1rem;
     margin: 1rem;
     font-size: 0.9rem;
-    background-color: #40ad36;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -97,42 +109,6 @@ nav ul li, nav ul li a {
     height: 20rem;
 }
 
-/*footer*/
-.contact {
-    bottom: 0; left: 0; right: 0;
-    padding: 0.25rem 0;
-    height: 3rem;
-    z-index: 20;
-    position: fixed;
-    background-color: #40ad36;
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.contact .insta {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-}
-.contact .insta img {
-    padding: 0.5rem;
-    margin: 0.5rem;
-    height: 2rem;
-}
-.contact h2 a {
-    margin: 0; padding: 0;
-    font-size: 1.25rem;
-    font-weight: bold;
-    letter-spacing: 0.5rem;
-    color: white;
-    display: inline-flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-}
-.contact h2:hover, .contact a:hover {
-    color: #ded1ce;
-}
 
 
 
@@ -145,7 +121,7 @@ nav ul li, nav ul li a {
 
 /* about */
 .about-container {
-    top: 8rem;
+    top: 12rem;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -188,19 +164,21 @@ nav ul li, nav ul li a {
 /*gallery*/
 .gallery-header {
     left: 0; right: 0;
-    top: 8rem;
+    top: 12rem;
     height: 3rem;
-    position: fixed;
-    z-index: 20;
-    background-color: #40ad36;
+    background-color: #eeeeee;
     opacity: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 1rem;
 }
-.gallery-header nav {
+.gallery-nav a {
+    margin: 0; padding: 0;
     font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    color: black;
 }
 .gallery-content {
     left: 0; right: 0;
@@ -218,11 +196,6 @@ nav ul li, nav ul li a {
 }
 .gallery-box img {
     height: 20rem;
-}
-.gallery-box:hover {
-    transform: scale(1.025);
-    box-shadow: 0.25rem 0.25rem 0.5rem black;
-    cursor: pointer;
 }
 #gallery-title {
     font-size: 1rem;
