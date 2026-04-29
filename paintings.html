@@ -30,217 +30,235 @@
 
     <body>
         <!-- header -->
-        <header>
-            <div class="header">
-                <div class="name">
-                    <a href="index.html"><h1>Elaine Collett</h1></a>
-                </div>
-                <div class="contact">
-                    <a href="https://www.instagram.com/elainemcollett" target="_blank">
-                        <img src="./resources/images/instagram-logo-black.jpg"
-                            alt="Instagram logo" />
-                        <h2>@elainemcollett</h2>
-                    </a>
-                </div>
-                <div class="nav">
-                    <a href="about.html">About</a>
-                    <a href="gallery.html">Gallery</a>
-                </div>
+        <header class="header">
+            <div class="name">
+                <a href="index.html"><h1>Elaine Collett</h1></a>
+            </div>
+            <div class="contact">
+                <a href="https://www.instagram.com/elainemcollett" target="_blank">
+                    <img src="./resources/images/instagram-logo-black.jpg"
+                        alt="Instagram logo" />
+                    <h2>@elainemcollett</h2>
+                </a>
+            </div>
+            <div class="nav">
+                <a href="about.html">About</a>
+                <a href="gallery.html">Gallery</a>
+            </div>
+            <div class="sub-nav">
+                <a href="paintings.html" id="here">Paintings</a>
+                <a href="drawings.html">Drawings</a>
+                <a href="archive.html">Archive</a>
             </div>
         </header>
 
         <main>
-            <!-- gallery nav -->
-            <section class="gallery-header">
-                <div class="gallery-nav">
-                    <a href="paintings.html" id="here">Paintings</a>
-                    <a href="drawings.html">Drawings</a>
-                    <a href="archive.html">Archive</a>
-                </div>
-            </section>
             <!-- gallery content -->
             <section class="gallery-content">
-                <div class="gallery-box" id="box" onclick="toggleSize()">
-                    <img class="gallery-image" id="gallery-image-id"
+                <div class="gallery-box">
+                    <img class="gallery-image"
                         src="./resources/images/paintings/fluidity-acrylic-on-canvas-92x121cm.webp" 
                         alt="Painting by Elaine Collett entitled 'Fluidity'" 
-                        title="'Fluidity'" />
+                        title="'Fluidity'"
+                        id="fluidity" />
                     <p id="gallery-title">Fluidity</p>
                     <p id="gallery-details"> - 92x121cm</p>
                 </div>
-                <div class="gallery-box" id="box" onclick="toggleSize()">
-                    <img class="gallery-image" id="gallery-image-id"
+                <div class="gallery-box">
+                    <img class="gallery-image"
                         src="./resources/images/paintings/ash-bole-dyptych.webp" 
                         alt="Painting by Elaine Collett entitled 'Ash Bole Dyptych'" 
-                        title="'Ash Bole Dyptych'" />
+                        title="'Ash Bole Dyptych'"
+                        id="ash-bole-dyptych" />
                     <p id="gallery-title">Ash Bole Dyptych</p>
                     <p id="gallery-details"> - xcm</p>
                 </div>
-                <div class="gallery-box" id="box" onclick="toggleSize()">
-                    <img class="gallery-image" id="gallery-image-id"
+                <div class="gallery-box">
+                    <img class="gallery-image"
                         src="./resources/images/paintings/tracks.webp" 
                         alt="Painting by Elaine Collett entitled 'Tracks'" 
-                        title="'Tracks'" />
+                        title="'Tracks'"
+                        id="tracks" />
                     <p id="gallery-title">Tracks</p>
                     <p id="gallery-details"> - xcm</p>
                 </div>
-                <div class="gallery-box" id="box" onclick="toggleSize()">
-                    <img class="gallery-image" id="gallery-image-id"
+                <div class="gallery-box">
+                    <img class="gallery-image"
                         src="./resources/images/paintings/jewels-acrylic-on-canvas-50.5x40.5cms.webp" 
                         alt="Painting by Elaine Collett entitled 'Jewels'" 
-                        title="'Jewels'" />
+                        title="'Jewels'"
+                        id="jewels" />
                     <p id="gallery-title">Jewels</p>
                     <p id="gallery-details"> - xcm</p>
                 </div>
-                <div class="gallery-box" id="box" onclick="toggleSize()">
-                    <img class="gallery-image" id="gallery-image-id"
+                <div class="gallery-box">
+                    <img class="gallery-image"
                         src="./resources/images/paintings/heat-haze.webp" 
                         alt="Painting by Elaine Collett entitled 'Heat Haze'" 
-                        title="'Heat Haze'" />
+                        title="'Heat Haze'"
+                        id="heat-haze" />
                     <p id="gallery-title">Heat Haze</p>
                     <p id="gallery-details"> - xcm</p>
                 </div>
-                <div class="gallery-box" id="box" onclick="toggleSize()">
-                    <img class="gallery-image" id="gallery-image-id"
+                <div class="gallery-box">
+                    <img class="gallery-image"
                         src="./resources/images/paintings/very-pink-acrylic-on-canvas-60x80x5.webp" 
                         alt="Painting by Elaine Collett entitled 'Very Pink'" 
-                        title="'Very Pink'" />
+                        title="'Very Pink'"
+                        id="very-pink" />
                     <p id="gallery-title">Very Pink</p>
                     <p id="gallery-details"> - xcm</p>
                 </div>
-                <div class="gallery-box" id="box" onclick="toggleSize()">
-                    <img class="gallery-image" id="gallery-image-id"
+                <div class="gallery-box">
+                    <img class="gallery-image"
                         src="./resources/images/paintings/glimpses-of-pink.webp" 
                         alt="Painting by Elaine Collett entitled 'Glimpses of Pink'" 
-                        title="'Glimpses of Pink'" />
+                        title="'Glimpses of Pink'"
+                        id="glimpses-of-pink" />
                     <p id="gallery-title">Glimpses of Pink</p>
                     <p id="gallery-details"> - x cm</p>
                 </div>
-                <div class="gallery-box" id="box" onclick="toggleSize()">
-                    <img class="gallery-image" id="gallery-image-id"
+                <div class="gallery-box">
+                    <img class="gallery-image"
                         src="./resources/images/paintings/struggling-80x80cms.webp" 
                         alt="Painting by Elaine Collett entitled 'Struggling'" 
-                        title="'Struggling'" />
+                        title="'Struggling'"
+                        id="struggling" />
                     <p id="gallery-title">Struggling</p>
                     <p id="gallery-details"> - 80 x 80cm</p>
                 </div>
-                <div class="gallery-box" id="box" onclick="toggleSize()">
-                    <img class="gallery-image" id="gallery-image-id"
+                <div class="gallery-box">
+                    <img class="gallery-image"
                         src="./resources/images/paintings/towards-the-light-80x100cms-2.webp" 
                         alt="Painting by Elaine Collett entitled 'Towards The Light'" 
-                        title="'Towards the Light'" />
+                        title="'Towards the Light'"
+                        id="towards-the-light" />
                     <p id="gallery-title">Towards The Light</p>
                     <p id="gallery-details"> - 80 x 100cm</p>
                 </div>
-                <div class="gallery-box" id="box" onclick="toggleSize()">
-                    <img class="gallery-image" id="gallery-image-id"
+                <div class="gallery-box">
+                    <img class="gallery-image"
                         src="./resources/images/paintings/saplings-acrylic-on-canvas-61x76cms-elaine-collett.webp" 
                         alt="Painting by Elaine Collett entitled 'Saplings'" 
-                        title="'Saplings'" />
+                        title="'Saplings'"
+                        id="saplings" />
                     <p id="gallery-title">Saplings</p>
                     <p id="gallery-details">acrylic on canvas - 61 x 76cm</p>
                 </div>
-                <div class="gallery-box" id="box" onclick="toggleSize()">
-                    <img class="gallery-image" id="gallery-image-id"
+                <div class="gallery-box">
+                    <img class="gallery-image"
                         src="./resources/images/paintings/underpass-salisbury-to-old-sarum-acrylic-on-canvas-80x80cms-elaine-collett.webp" 
                         alt="Painting by Elaine Collett entitled 'Underpass Salisbury to Old Sarum'" 
-                        title="'Underpass Salisbury to Old Sarum'" />
+                        title="'Underpass Salisbury to Old Sarum'"
+                        id="underpass-salisbury-to-old-sarum" />
                     <p id="gallery-title">Underpass Salisbury to Old Sarum</p>
                     <p id="gallery-details">acrylic on canvas - 80 x 80cm</p>
                 </div>
-                <div class="gallery-box" id="box" onclick="toggleSize()">
-                    <img class="gallery-image" id="gallery-image-id"
+                <div class="gallery-box">
+                    <img class="gallery-image"
                         src="./resources/images/paintings/holloway.webp" 
                         alt="Painting by Elaine Collett entitled 'Holloway'" 
-                        title="'Holloway'" />
+                        title="'Holloway'"
+                        id="holloway" />
                     <p id="gallery-title">Holloway</p>
                     <p id="gallery-details">acrylic on canvas - 80 x 80cm</p>
                 </div>
-                <div class="gallery-box" id="box" onclick="toggleSize()">
-                    <img class="gallery-image" id="gallery-image-id"
+                <div class="gallery-box">
+                    <img class="gallery-image"
                         src="./resources/images/paintings/img_9759-3.webp" 
                         alt="Painting by Elaine Collett entitled 'Still In Love With Green'" 
-                        title="'Still In Love With Green'" />
+                        title="'Still In Love With Green'"
+                        id="still-in-love-with-green" />
                     <p id="gallery-title"></span>Still In Love With Green</p>
                     <p id="gallery-details">acrylic on canvas - 91.5 x 122cm</p>
                 </div>
-                <div class="gallery-box" id="box" onclick="toggleSize()">
-                    <img class="gallery-image" id="gallery-image-id"
+                <div class="gallery-box">
+                    <img class="gallery-image"
                         src="./resources/images/paintings/poundbury-construction-acrylic-on-canvas-41x51cms.webp" 
                         alt="Painting by Elaine Collett entitled 'Poundbury Construction'" 
-                        title="'Poundbury Construction'" />
+                        title="'Poundbury Construction'"
+                        id="poundbury-construction" />
                     <p id="gallery-title">Poundbury Construction</p>
                     <p id="gallery-details">acrylic on canvas - 41 x 51cm</p>
                 </div>
-                <div class="gallery-box" id="box" onclick="toggleSize()">
-                    <img class="gallery-image" id="gallery-image-id"
+                <div class="gallery-box">
+                    <img class="gallery-image"
                         src="./resources/images/paintings/shard-acrylic-on-canvas-50x50cms.webp" 
                         alt="Painting by Elaine Collett entitled 'Shard'" 
-                        title="'Shard'" />
+                        title="'Shard'"
+                        id="shard" />
                     <p id="gallery-title">Shard</p>
                     <p id="gallery-details"> - xcm</p>
                 </div>
-                <div class="gallery-box" id="box" onclick="toggleSize()">
-                    <img class="gallery-image" id="gallery-image-id"
+                <div class="gallery-box">
+                    <img class="gallery-image"
                         src="./resources/images/paintings/shard-3-city-of-dreams-acrylic-on-canvas-100x80cms.webp" 
                         alt="Painting by Elaine Collett entitled 'Shard 3 City of Dreams'" 
-                        title="'Shard 3 City of Dreams'" />
+                        title="'Shard 3 City of Dreams'"
+                        id="shard-3-city-of-dreams" />
                     <p id="gallery-title">Shard 3 City of Dreams</p>
                     <p id="gallery-details"> - xcm</p>
                 </div>
-                <div class="gallery-box" id="box" onclick="toggleSize()">
-                    <img class="gallery-image" id="gallery-image-id"
+                <div class="gallery-box">
+                    <img class="gallery-image"
                         src="./resources/images/paintings/fragments-acrylic-on-canvas-60x80cms-elaine-collett.webp" 
                         alt="Painting by Elaine Collett entitled 'Fragments'" 
-                        title="'Fragments'" />
+                        title="'Fragments'"
+                        id="fragments" />
                     <p id="gallery-title">Fragments</p>
                     <p id="gallery-details">acrylic on canvas - 60 x 80cm</p>
                 </div>
-                <div class="gallery-box" id="box" onclick="toggleSize()">
-                    <img class="gallery-image" id="gallery-image-id"
+                <div class="gallery-box">
+                    <img class="gallery-image"
                         src="./resources/images/paintings/whats-in-a-wave-acrylic-on-canvas-60x80cms.webp" 
                         alt="Painting by Elaine Collett entitled 'What's In A Wave'" 
-                        title="'What's In A Wave'" />
+                        title="'What's In A Wave'"
+                        id="whats-in-a-wave" />
                     <p id="gallery-title">What's In A Wave</p>
                     <p id="gallery-details">acrylic on canvas - 60 x 80cm</p>
                 </div>
-                <div class="gallery-box" id="box" onclick="toggleSize()">
-                    <img class="gallery-image" id="gallery-image-id"
+                <div class="gallery-box">
+                    <img class="gallery-image"
                         src="./resources/images/paintings/no-plastic-acrylic-on-canvas-100x100cms-1.webp" 
                         alt="Painting by Elaine Collett entitled 'No Plastic'" 
-                        title="'No Plastic'" />
+                        title="'No Plastic'"
+                        id="no-plastic" />
                     <p id="gallery-title">No Plastic</p>
                     <p id="gallery-details">acrylic on canvas - 100 x 100cm</p>
                 </div>
-                <div class="gallery-box" id="box" onclick="toggleSize()">
-                    <img class="gallery-image" id="gallery-image-id"
+                <div class="gallery-box">
+                    <img class="gallery-image" 
                         src="./resources/images/paintings/no-plastic-2-acrylic-on-canvas-100x100cms.webp" 
                         alt="Painting by Elaine Collett entitled 'No Plastic 2'" 
-                        title="'No Plastic 2'" />
+                        title="'No Plastic 2'"
+                        id="no-plastic-2" />
                     <p id="gallery-title">No Plastic 2</p>
                     <p id="gallery-details">acrylic on canvas - 100 x 100cm</p>
                 </div>
-                <div class="gallery-box" id="box" onclick="toggleSize()">
-                    <img class="gallery-image" id="gallery-image-id"
+                <div class="gallery-box">
+                    <img class="gallery-image" 
                         src="./resources/images/paintings/bars-of-light-acrylic-on-canvas-70x100cms.webp" 
                         alt="Painting by Elaine Collett entitled 'Bars of Light'" 
-                        title="'Bars of Light'" />
+                        title="'Bars of Light'"
+                        id="bars-of-light" />
                     <p id="gallery-title">Bars of Light</p>
                     <p id="gallery-details">acrylic on canvas - 70 x 100cm</p>
                 </div>
-                <div class="gallery-box" id="box" onclick="toggleSize()">
-                    <img class="gallery-image" id="gallery-image-id"
+                <div class="gallery-box">
+                    <img class="gallery-image" 
                         src="./resources/images/paintings/junction-acrylic-on-canvas-40x40cms.webp" 
                         alt="Painting by Elaine Collett entitled 'Junction'" 
-                        title="'Junction'" />
+                        title="'Junction'"
+                        id="junction" />
                     <p id="gallery-title">Junction</p>
                     <p id="gallery-details">acrylic on canvas - 40x40cms</p>
                 </div>
-                <div class="gallery-box" id="box" onclick="toggleSize()">
-                    <img class="gallery-image" id="gallery-image-id"
+                <div class="gallery-box">
+                    <img class="gallery-image" 
                         src="./resources/images/paintings/img_9357-2.webp" 
                         alt="Painting by Elaine Collett entitled ''" 
-                        title="'Naples Yellow with Violet'" />
+                        title="'Naples Yellow with Violet'"
+                        id="naples-yellow-with-violet" />
                     <p id="gallery-title">Naples Yellow with Violet</p>
                     <p id="gallery-details">acrylic on canvas - 46x60cms</p>
                 </div>

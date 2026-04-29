@@ -14,50 +14,41 @@ a {
     text-decoration: none;
 }
 #here {
-    color: #ded1ce;
+    color: #bbbbbb;
     cursor: default;
 }
 
 /* index */
 
+/* test */
+.name, .contact, .nav, .sub-nav {
+    margin: 0.5rem;
+}
+
 /*header*/
 .header {
-    left: 0; right: 0; top: 0;
-    margin: 0; padding: 0;
-    height: 12rem;
     background-color: white;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
-.name, .nav, .contact {
-    margin: 0; 
-    padding: 0.25rem;
-    width: 40rem;
-    text-align: center;
-}
-header a:hover, .nav a:hover, .contact a:hover {
-    color: #ded1ce;
+header a:hover, .nav a:hover, .contact a h2:hover, .gallery-nav a:hover {
+    color: #999999;
     cursor: pointer;
 }
-.name, .contact, .nav {
-    border-bottom: 1px solid black;
+.name {
+    background-color: #409936;
 }
 .name a {
+    margin: 0;
     color: black;
-    font-size: 1.4rem;
+    font-size: 2rem;
     font-weight: bold;
     letter-spacing: 1rem;
     text-transform: uppercase;
+    text-align: center;
 }
-.name a h1 {
-    margin: 0; padding: 1rem;
-}
+.name a h1 {margin: 0;}
 .contact a {
+    margin: 0.5rem;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     column-gap: 1rem;
@@ -78,19 +69,31 @@ header a:hover, .nav a:hover, .contact a:hover {
     align-items: center;
 }
 .nav a {
-    margin: 0; padding: 0;
+    margin: 0.5rem;
     font-size: 1.5rem;
     font-weight: bold;
     letter-spacing: 0.5rem;
     text-transform: uppercase;
     color: black;
 }
+.sub-nav {
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.sub-nav a {
+    margin: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    color: black;
+}
 
-/*main*/
+
+/* main */
 .content {
-    left: 0; right: 0;
-    top: 12rem;
-    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -111,23 +114,15 @@ header a:hover, .nav a:hover, .contact a:hover {
 
 
 
-
-
-
-
-
-
-
-
 /* about */
 .about-container {
-    top: 12rem;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin: 1rem;
 }
+.about-container table td {
+    padding: 0.5rem;
+}
+
+/* statement*/
 .statement-container {
     display: flex;
     flex-direction: row;
@@ -148,51 +143,16 @@ header a:hover, .nav a:hover, .contact a:hover {
 #statement-quote p {
     margin: 0;
 }
-.cv-container {
-    margin: 1rem;
-    margin-bottom: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: top;
-}
-.cv-container td {
-    padding: 0.5rem;
-}
-
 
 /*gallery*/
-.gallery-header {
-    margin: 0; padding: 0;
-    top: 12rem;
-    height: 3rem;
-    background-color: #eeeeee;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.gallery-nav a {
-    margin: 0 1rem; padding: 0;
-    font-size: 1.5rem;
-    font-weight: bold;
-    letter-spacing: 0.5rem;
-    text-transform: uppercase;
-    color: black;
-}
 .gallery-content {
-    left: 0; right: 0;
-    top: 15rem;
-    padding: 1rem;
-    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
 }
 .gallery-box {
-    margin: 0 1rem 4rem;
+    margin: 1rem; 
     padding: 1rem;
 }
 .gallery-box img {
@@ -207,143 +167,53 @@ header a:hover, .nav a:hover, .contact a:hover {
 }
 
 
-/* exhibitions and links */
-.table-container {
-    top: 8rem;
-    position: absolute;
-    width: 100%;
-}
-.exhibition-content, .link-content {
-    padding: 2rem;
-    margin: 2rem;
-    background-color: #40ad36;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.exhibition-table td, .link-table td {
-    color: black;
-    font-size: 0.9rem;
-    padding: 1rem;
-    background-color: #ded1ce;
-}
+/* paintings sizing */
+#fluidity {height: 36.8rem;}
+#struggling {height: 32rem;}
+#towards-the-light {height: 40rem;}
+#saplings {height: 30.4rem;}
+#underpass-salisbury-to-old-sarum {height: 32rem;}
+#holloway {height: 32rem;}
+#still-in-love-with-green {height: 48.8rem;}
+#poundbury-construction {height: 20.4rem;}
+#fragments {height: 32rem;}
+#whats-in-a-wave {height: 32rem;}
+#no-plastic {height: 40rem;}
+#no-plastic-2 {height: 40rem;}
+#bars-of-light {height: 40rem;}
+#junction {height: 16rem;}
+#naples-yellow-with-violet {height: 24rem;}
 
-.link-table td a {
-    color: black;
-    text-decoration: underline;
-}
+/* drawings sizing */
+#divided-fields {height: 21.2rem;}
+#contained-flow {height: 21.2rem;}
+#dark-harvest {height: 17.2rem;}
+#incursion {height: 17.2rem;}
+#flow {height: 16rem;}
+#fieldscape-1 {height: 11.2rem;}
+#fieldscape-4 {height: 11.2rem;}
+#fieldscape-3 {height: 11.2rem;}
+#hedge-and-ditch {height: 16rem;}
+#enclosure {height: 12rem;}
+#pink-spring-1 {height: 16rem;}
+#pink-spring-2 {height: 12rem;}
+#crop-lines {height: 24.4rem;}
+#crop-lines-2 {height: 18rem;}
+#crop-lines-3 {height: 16rem;}
+#crop-lines-4 {height: 17.2rem;}
 
-
-
-
-
-/*
-
-
-
-@media only screen and (max-width: 430px) {
-    .header {height: 9rem;}
-    .header h1 {font-size: 1.5rem;}
-    nav ul li, nav ul li a {font-size: 1.2rem;}
-    .content {top: 9.5rem;}
-    .content .home-box {
-        scroll-margin-top: 9.5rem;
-        width: auto;
-        font-size: 0.85rem;
-    }
-    .content .home-box img {
-        width: auto;
-        height: auto;
-        max-width: 12rem;
-        max-height: 16rem;
-    }
-    .contact h2, .contact a {font-size: 1.2rem;}
-}
-@media only screen and (max-width: 358px) {
-    .header h1 {font-size: 1.25rem;}
-    nav ul li, nav ul li a {font-size: 1rem;}
-    .content .home-box {font-size: 0.7rem;}
-    .contact h2, .contact a {font-size: 1rem;}
-}
-@media only screen and (max-width: 300px) {
-    .header h1 {font-size: 1rem;}
-    nav ul li, nav ul li a {font-size: 0.8rem;}
-    .content .home-box {font-size: 0.7rem;}
-    .contact h2, .contact a {font-size: 0.8rem;}
-}
-
-
-@media only screen and (max-height: 696px) and (min-width: 430px) {
-    .header {height: 7rem}
-    .header-name {
-        height: 5rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-    .header-name .header-logo img {padding: 1rem;}
-    .header h1 {font-size: 1.5rem;}
-    .content {
-        top: 7rem;
-        padding-bottom: 4rem;
-    }
-    .content .home-box {
-        scroll-margin-top: 7rem;
-        width: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .content .home-box:hover {
-        transform: scale(1.0125);
-        box-shadow: 0.25rem 0.25rem 0.5rem black;
-    }
-    .contact {
-        height: 2.5rem;
-        display: inline-flex;
-        flex-flow: row nowrap;
-        justify-content: space-around;
-        align-items: center;
-    }
-}
-
-
-@media only screen and (min-width: 1272px) {
-    .header {height: 11rem}
-    .header-name {
-        height: 8rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-    .header-name .header-logo img {
-        width: 5rem;
-        padding: 0.5rem 2rem;
-    }
-    .header h1 {font-size: 5rem;}
-    nav ul {height: 3rem;}
-    nav ul li, nav ul li a {font-size: 2rem;}
-    .content {
-        top: 11rem;
-        padding-top: 0.5rem;
-        padding-bottom: 3.5rem;
-    }
-    .content .home-box {
-        scroll-margin-top: 11rem;
-        font-size: 1.1rem;
-    }
-    .contact {
-        display: inline-flex;
-        flex-flow: row nowrap;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .contact h2, .contact a {
-        font-size: 2rem;
-    }
-}
-
-*/
+/* archive sizing*/
+#reconfigured {height: 60rem;}
+#dark-junction {height: 50.4rem;}
+#innundation {height: 60.8rem;}
+#interrupted-turbulence {height: 60rem;}
+#land-through-water {height: 48.8rem;}
+#night-journey {height: 48.8rem;}
+#weir {height: 48.8rem;}
+#surge {height: 48.8rem;}
+#labour-and-gold {height: 52.8rem;}
+#shimmer {height: 40rem;}
+#tension {height: 40rem;}
+#blue-and-green-on-white {height: 20.2rem;}
+#blue-and-yellow-on-white {height: 20.4rem;}
+#gills-lemon {height: 15.2rem;}
