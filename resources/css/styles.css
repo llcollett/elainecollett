@@ -168,7 +168,12 @@ header a:hover, .nav a:hover, .contact a h2:hover, .gallery-nav a:hover {
 
 
 /* paintings sizing */
-#fluidity {height: 36.8rem;}
+#fluidity {height: 48.4rem;}
+#tracks {height: 10.2rem;}
+#jewels{height: 20.2rem;}
+#heat-haze{height: 24.4rem;}
+#very-pink{height: 32rem;}
+#glimpses-of-pink{height: 32rem;}
 #struggling {height: 32rem;}
 #towards-the-light {height: 40rem;}
 #saplings {height: 30.4rem;}
@@ -176,6 +181,8 @@ header a:hover, .nav a:hover, .contact a h2:hover, .gallery-nav a:hover {
 #holloway {height: 32rem;}
 #still-in-love-with-green {height: 48.8rem;}
 #poundbury-construction {height: 20.4rem;}
+#shard{height: 20rem;}
+#shard-3-city-of-dreams{height: 40rem;}
 #fragments {height: 32rem;}
 #whats-in-a-wave {height: 32rem;}
 #no-plastic {height: 40rem;}
