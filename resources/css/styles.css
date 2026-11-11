@@ -165,6 +165,31 @@ header a:hover, .nav a:hover, .contact a h2:hover, .gallery-nav a:hover {
 #gallery-details {
     font-size: 0.75rem;
 }
+.back-to-top {
+    display: none;
+    position: fixed;
+    margin: 0; padding: 0;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 99;
+    background-color: #409936;
+    cursor: pointer;
+    border: none;
+}
+.back-to-top h3 {
+    margin: 0; 
+    padding: 1rem 0.5rem;
+    width: 4rem;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.25rem;
+    text-decoration: none;
+}
+.back-to-top h3:hover {
+    color: #999999;
+}
 
 
 /* paintings sizing */
